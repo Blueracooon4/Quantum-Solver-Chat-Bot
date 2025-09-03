@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Smart Curriculum Assistant</title>
+   <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="bot-avatar">🤖</div>
+            <div class="header-text">
+                <h1> Quantum Solver (v1.0)</h1>
+                
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-avatar bot-avatar-msg">🤖</div>
+                <div class="message-content">
+                    Hello! I'm Quantum Solver, your AI-powered curriculum assistant. I use advanced language models to provide personalized guidance on:
+                    <br><br>
+                    📚 <strong>Career</strong> - Deep insights into career paths with market analysis<br>
+                    🎨 <strong>Hobby Development</strong> - Discover interests that boost your profile<br>
+                    🎯 <strong>Academic Planning</strong> - Smart study strategies and course recommendations<br>
+                    ⏰ <strong>Smart Scheduling</strong> - AI-optimized time management<br>
+                    📅 <strong>Event Updates</strong> - Stay informed about opportunities<br>
+                    <br>
+                    <em>💡 Tip: Ask me complex questions! I can analyze your specific situation and provide detailed, personalized advice.</em>
+                    <br><br>
+                    What would you like to explore today?
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-actions">
+            <button class="quick-btn" onclick="sendQuickMessage('career guidance')">💼 Career Help</button>
+            <button class="quick-btn" onclick="sendQuickMessage('hobby suggestions')">🎨 Hobby Ideas</button>
+            <button class="quick-btn" onclick="sendQuickMessage('study plan')">📚 Study Plan</button>
+            <button class="quick-btn" onclick="sendQuickMessage('free period activities')">⏰ Free Period</button>
+            <button class="quick-btn" onclick="sendQuickMessage('Daily routine')">📅 Daily Routine</button>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" class="input-field" id="messageInput" placeholder="Ask me anything about your academics...">
+            <button class="send-btn" id="sendBtn" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</body>
+</html>
